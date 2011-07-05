@@ -1,9 +1,9 @@
 ﻿<ProjectConfig version="3.3.4">
   <ApplicationHostChosen>IIS</ApplicationHostChosen>
   <CoverageConfig version="3.3.4">
-    <WorkingDirectory>D:\Personal\Projects\GraphTraversal</WorkingDirectory>
+    <WorkingDirectory>D:\Personal\Projects\TryMe\GraphTraversal</WorkingDirectory>
     <BuildId />
-    <CommandLineArgs>/testcontainer:D:\Personal\Projects\GraphTraversal\TestGraphTraversal\bin\Debug\TestGraphTraversal.dll</CommandLineArgs>
+    <CommandLineArgs>/testcontainer:.\TestGraphTraversal\bin\Debug\TestGraphTraversal.dll</CommandLineArgs>
     <CommandLineExe>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\MSTest.exe</CommandLineExe>
     <CoverageTrend>mstest_coverage.trend</CoverageTrend>
     <CoverageMetrics>Symbol, Branch, CyclomaticComplexity, MethodVisits</CoverageMetrics>
