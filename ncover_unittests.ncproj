@@ -1,7 +1,7 @@
 ﻿<ProjectConfig version="3.3.4">
   <ApplicationHostChosen>IIS</ApplicationHostChosen>
   <CoverageConfig version="3.3.4">
-    <WorkingDirectory>D:\Personal\Projects\TryMe\GraphTraversal</WorkingDirectory>
+    <WorkingDirectory>D:\Personal\Projects\GraphTraversal</WorkingDirectory>
     <BuildId />
     <CommandLineArgs>/testcontainer:.\TestGraphTraversal\bin\Debug\TestGraphTraversal.dll</CommandLineArgs>
     <CommandLineExe>C:\Program Files (x86)\Microsoft Visual Studio 10.0\Common7\IDE\MSTest.exe</CommandLineExe>
