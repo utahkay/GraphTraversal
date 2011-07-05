@@ -10,5 +10,4 @@ bin/
 obj/
 TestResults/
 *.testsettings
-*.dll
 *.pdb
