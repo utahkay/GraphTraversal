@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using FluentAssertions;
 using GraphTraversal;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
@@ -15,28 +16,32 @@ namespace TestGraphTraversal
         public void BreadthFirstNoCycles()
         {
             var graph = new Graph<string>(CreateConnectedGraphNoCycles());
-            graph.Traverse(Breadth).Should().Equal(new List<string> {"Nestle", "Ghirardelli", "Hershey", "Cadbury"});
+            var expected = new List<string> {"Nestle", "Ghirardelli", "Hershey", "Cadbury"};
+            CollectionAssert.AreEqual(expected.ToArray(), graph.Traverse(Breadth).ToArray());
         }
 
         [TestMethod]
         public void BreadthFirstWithCycles()
         {
             var graph = new Graph<string>(CreateConnectedGraphWithCycles());
-            graph.Traverse(Breadth).Should().Equal(new List<string> { "Provo", "Springville", "Mapleton", "Lehi", "Highland" });            
+            var expected = new List<string> {"Provo", "Springville", "Mapleton", "Lehi", "Highland"};
+            CollectionAssert.AreEqual(expected.ToArray(), graph.Traverse(Breadth).ToArray());            
         }
 
         [TestMethod]
         public void DepthFirstNoCycles()
         {
             var graph = new Graph<string>(CreateConnectedGraphNoCycles());
-            graph.Traverse(Depth).Should().Equal(new List<string> { "Nestle", "Hershey", "Ghirardelli", "Cadbury" });
+            var expected = new List<string> {"Nestle", "Hershey", "Ghirardelli", "Cadbury"};
+            CollectionAssert.AreEqual(expected.ToArray(), graph.Traverse(Depth).ToArray());
         }
 
         [TestMethod]
         public void DepthFirstWithCycles()
         {
             var graph = new Graph<string>(CreateConnectedGraphWithCycles());
-            graph.Traverse(Depth).Should().Equal(new List<string> { "Provo", "Highland", "Lehi", "Mapleton", "Springville"});
+            var expected = new List<string> {"Provo", "Highland", "Lehi", "Mapleton", "Springville"};
+            CollectionAssert.AreEqual(expected.ToArray(), graph.Traverse(Depth).ToArray());
         }
 
         //   Nestle-------------Hershey

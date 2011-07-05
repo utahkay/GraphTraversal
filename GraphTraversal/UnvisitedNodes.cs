@@ -1,4 +1,5 @@
-﻿using System.Collections.Generic;
+﻿using System;
+using System.Collections.Generic;
 using System.Linq;
 
 namespace GraphTraversal
@@ -20,12 +21,17 @@ namespace GraphTraversal
 
         public Node<T> Get()
         {
-            return unvisited.Dequeue();
+            var node = unvisited.Dequeue();
+            while (node != null && node.Visited)
+            {
+                node = unvisited.Dequeue();
+            }
+            return node;
         }
 
         public bool HasElements()
         {
-            return unvisited.Count > 0;
+            return unvisited.Where(x => !x.Visited).Count() > 0;
         }
     }
 

@@ -31,6 +31,22 @@ namespace TestGraphTraversal
         }
 
         [TestMethod]
+        public void BreadthFirstDoesntCountVisited()
+        {
+            node1.Visited = true;
+            node2.Visited = true;
+            breadthFirst.HasElements().Should().BeFalse();
+        }
+
+        [TestMethod]
+        public void BreadthFirstRemovesVisited()
+        {
+            node1.Visited = true;
+            breadthFirst.Get().Should().Be(node2);
+            breadthFirst.HasElements().Should().BeFalse();
+        }
+
+        [TestMethod]
         public void DepthFirst()
         {
             depthFirst.Get().Should().Be(node2);
