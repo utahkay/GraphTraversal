@@ -1,11 +1,36 @@
-﻿namespace GraphTraversal
+﻿using System;
+using System.Linq;
+
+namespace GraphTraversal
 {
-    // NOTE: You can use the "Rename" command on the "Refactor" menu to change the class name "Service1" in code, svc and config file together.
     public class GraphTraversal : IGraphTraversal
     {
         public string Traverse()
         {
-            return "A B C";
+            var graph = CreateGraph();
+            var results = graph.Traverse(Graph<string>.Method.BreadthFirst);
+            return string.Join(",", results.ToArray());
+        }
+
+        private static Graph<string> CreateGraph()
+        {
+            var provo = CreateNode("Provo");
+            var springville = CreateNode("Springville");
+            var mapleton = CreateNode("Mapleton");
+            var lehi = CreateNode("Lehi");
+            var highland = CreateNode("Highland");
+            provo.AddNeighbor(springville);
+            provo.AddNeighbor(mapleton);
+            provo.AddNeighbor(lehi);
+            provo.AddNeighbor(highland);
+            springville.AddNeighbor(mapleton);
+            highland.AddNeighbor(lehi);
+            return new Graph<string>(provo);
+        }
+
+        private static Node<string> CreateNode(string contents)
+        {
+            return new Node<string>(contents);
         }
     }
 }

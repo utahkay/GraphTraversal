@@ -14,7 +14,7 @@ namespace TestAcceptanceGraphTraversal
         public void Traverse()
         {
             var graph = new GraphTraversalClient();
-            Assert.AreEqual("A B C", graph.Traverse());
+            Assert.AreEqual("Provo,Springville,Mapleton,Lehi,Highland", graph.Traverse());
         }
     }
 }
