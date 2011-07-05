@@ -55,13 +55,18 @@ namespace TestGraphTraversal
         }
 
         [TestMethod]
-        public void DepthFirstRemovesDuplicates()
+        public void DepthFirstRemovesVisited()
         {
-            depthFirst.Add(node3);
-            depthFirst.Add(node1);
+            node2.Visited = true;
             depthFirst.Get().Should().Be(node1);
-            depthFirst.Get().Should().Be(node3);
-            depthFirst.Get().Should().Be(node2);
+            depthFirst.HasElements().Should().BeFalse();
+        }
+
+        [TestMethod]
+        public void DepthFirstDoesntCountVisited()
+        {
+            node1.Visited = true;
+            node2.Visited = true;
             depthFirst.HasElements().Should().BeFalse();
         }
     }
