@@ -1,0 +1,14 @@
+*.vsmdi
+*.user
+_ReSharper*/
+*.suo
+*.nccov
+*.nccov.bkp
+*.trend
+Local.testsettings
+bin/
+obj/
+TestResults/
+*.testsettings
+*.dll
+*.pdb

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="fb3df4c8-7147-466c-9e26-f9410d10996d" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost/GraphTraversal/GraphTraversal.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="GraphTraversal.wsdl" MetadataType="Wsdl" ID="f1b978cb-5e7b-45b6-991b-515af809c257" SourceId="1" SourceUrl="http://kjohansen01.myfamily.int/GraphTraversal/GraphTraversal.svc?wsdl" />
+    <MetadataFile FileName="GraphTraversal.xsd" MetadataType="Schema" ID="f7586521-19d2-442a-b2ea-967a21748c75" SourceId="1" SourceUrl="http://kjohansen01.myfamily.int/GraphTraversal/GraphTraversal.svc?xsd=xsd1" />
+    <MetadataFile FileName="GraphTraversal1.xsd" MetadataType="Schema" ID="e213bc77-f558-44d0-9fa7-1ea29e5edce7" SourceId="1" SourceUrl="http://kjohansen01.myfamily.int/GraphTraversal/GraphTraversal.svc?xsd=xsd0" />
+    <MetadataFile FileName="GraphTraversal.disco" MetadataType="Disco" ID="61eba21a-7d4b-4204-9e6f-17329eed139f" SourceId="1" SourceUrl="http://kjohansen01.myfamily.int/GraphTraversal/GraphTraversal.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

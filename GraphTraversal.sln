@@ -1,0 +1,42 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GraphTraversal", "GraphTraversal\GraphTraversal.csproj", "{CDC63E14-0D5A-4969-BC6A-BFE319412181}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestGraphTraversal", "TestGraphTraversal\TestGraphTraversal.csproj", "{90719EDA-18AD-4916-8691-6FAF57AA930C}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{9451113D-45B3-4084-9BE2-988B091E9A05}"
+	ProjectSection(SolutionItems) = preProject
+		GraphTraversal.vsmdi = GraphTraversal.vsmdi
+		Local.testsettings = Local.testsettings
+		TraceAndTestImpact.testsettings = TraceAndTestImpact.testsettings
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "TestAcceptanceGraphTraversal", "TestAcceptanceGraphTraversal\TestAcceptanceGraphTraversal.csproj", "{F79DD00E-325A-47F4-BD9F-D61FC5339D3A}"
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = GraphTraversal.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CDC63E14-0D5A-4969-BC6A-BFE319412181}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CDC63E14-0D5A-4969-BC6A-BFE319412181}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CDC63E14-0D5A-4969-BC6A-BFE319412181}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CDC63E14-0D5A-4969-BC6A-BFE319412181}.Release|Any CPU.Build.0 = Release|Any CPU
+		{90719EDA-18AD-4916-8691-6FAF57AA930C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{90719EDA-18AD-4916-8691-6FAF57AA930C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{90719EDA-18AD-4916-8691-6FAF57AA930C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{90719EDA-18AD-4916-8691-6FAF57AA930C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F79DD00E-325A-47F4-BD9F-D61FC5339D3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F79DD00E-325A-47F4-BD9F-D61FC5339D3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F79DD00E-325A-47F4-BD9F-D61FC5339D3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F79DD00E-325A-47F4-BD9F-D61FC5339D3A}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
